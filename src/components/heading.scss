@@ -1,0 +1,118 @@
+// Titel
+
+// je nach Viewport möchte ich eine verschieden stark ansteigende Titelei
+$font-scale--default: 1.12;
+$font-scale--m: 1.2;
+$font-scale--l: 1.25;
+
+
+
+hr {
+  margin-top: 2rem; 
+  margin-bottom: 2rem; 
+  border: 1px solid #979797;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  padding: 0;
+ 
+}
+
+h1 {
+  font-size: 1rem * $font-scale--default * $font-scale--default;
+  margin-bottom: 3em;
+  font-family: NotoSansJP-Light;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 0.46px;
+  line-height: 40px;
+
+  @include media(m) {
+    font-size: 1rem * $font-scale--m * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 1rem * $font-scale--l * $font-scale--l;
+  }
+}
+
+h2 {
+  font-size: 1rem * $font-scale--default;
+  font-family: NotoSansJP-Light;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  margin-bottom: 20px;
+
+  @include media(m) {
+    font-size: 1rem * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 1rem * $font-scale--l;
+  }
+}
+
+h3 {
+    font-size: 21px;
+    font-family: NotoSansJP-Bold;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.3px;
+    line-height: 25px;
+}
+
+h3.black{
+
+  color: #282828;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+p{
+
+  font-family: NotoSansJP-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0.23px;
+}
+
+ p.linkgross{
+  font-size: 18px;
+  color: #E1936A;
+
+}
+
+p.datum{
+  font-size: 14px;
+   color: #FFFFFF;
+   margin-top: 1.2em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
