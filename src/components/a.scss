@@ -15,9 +15,8 @@ a:hover {
 
 
 
-form input#submit,
-form .linkgross {
-	
+.linkgross {
+
 		height: 3em;
 		width: 10em;
 		transition: .5s;
@@ -26,13 +25,11 @@ form .linkgross {
 		position: relative;
 }
 
-form input#submit:hover,
-form .linkgross:hover {
+.linkgross:hover {
 		color: #c94d27;
 }
 
-form input#submit::before,
-form .linkgross::before {
+.linkgross::before {
 		content: "";
 		display: block;
 		height: 2px;
@@ -44,8 +41,7 @@ form .linkgross::before {
 		transition: .5s;
 }
 
-form input#submit::after,
-form .linkgross::after {
+.linkgross::after {
 		content: "";
 		display: block;
 		height: 10px;
@@ -61,13 +57,11 @@ form .linkgross::after {
 		transition: .5s;
 }
 
-form input#submit:hover::before,
-form .linkgross:hover::before {
+.linkgross:hover::before {
 		right: -28px;
 		background: #c94d27;
 }
 
-form input#submi:hover::after,
-form .linkgross:hover::after {
+.linkgross:hover::after {
 		right: -28px;
 }
