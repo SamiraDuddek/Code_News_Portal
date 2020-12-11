@@ -16,12 +16,12 @@ a:hover {
 
 
 .linkgross {
-
 		height: 3em;
 		width: 10em;
 		text-align: left;
 		padding-left: 1em;
 		position: relative;
+    display: inline-block;
 }
 
 .linkgross:hover {
