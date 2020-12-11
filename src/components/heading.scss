@@ -57,7 +57,7 @@ h2 {
   }
 
   @include media(l) {
-    font-size: 1rem * $font-scale--l;
+    font-size: 0.9rem * $font-scale--l;
   }
 }
 
