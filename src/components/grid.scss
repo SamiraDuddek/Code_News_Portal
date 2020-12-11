@@ -56,6 +56,13 @@ div[class^="card-"] {
   }
 }
 
+.column-8 {
+  grid-column: span 12;
+  @include media(m) {
+    grid-column: span 8;
+  }
+}
+
 .column-5to12 {
   grid-column-start: 2;
   grid-column-end: span 11;
