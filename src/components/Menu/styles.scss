@@ -1,0 +1,23 @@
+.navlinieeins{
+	background-color: red;
+	align-items:center;
+}
+
+.nav-links{
+  display: flex;
+  width: 28%;
+}
+
+.nav-links li{ 
+  list-style: none;
+  margin-right: 56px;
+  text-align: center;
+}
+
+.nav-links a { 
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+
+}

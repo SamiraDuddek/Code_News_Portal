@@ -43,6 +43,12 @@ h1 {
   }
 }
 
+h1.logo{
+  font-size: 50px;
+  color: #FFFFFF;
+  letter-spacing: 0.71px;
+}
+
 h2 {
   font-size: 1rem * $font-scale--default;
   font-family: NotoSansJP-Light;
@@ -97,9 +103,14 @@ p{
 }
 
 p.datum{
-  font-size: 14px;
+   font-size: 14px;
    color: #FFFFFF;
    margin-top: 1.2em;
+
+}
+
+p.anzeige{
+font-size: 12px;
 
 }
 
