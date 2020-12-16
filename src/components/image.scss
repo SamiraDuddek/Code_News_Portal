@@ -4,11 +4,10 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 }
 
-
-.imghover{
+.imghover {
   position: relative;
 }
 
@@ -25,31 +24,37 @@ img {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #ffffff;
 }
 
-
-.gradientbox{
+.gradientbox {
   position: relative;
+  img {
+    height: 273px;
+    object-fit: cover;
+  }
 }
 
-.gradient{
+.gradient {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(180deg, rgba(109,114,120,0.00) 0%, #04050A 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(109, 114, 120, 0) 0%,
+    #04050a 100%
+  );
 }
 
-.textbox{
+.textbox {
   text-align: left;
   margin-left: 0.8rem;
   margin-top: 2rem;
   margin-right: 0.2rem;
 }
-
 
 .werbung {
   background-color: #bd5f3b;
