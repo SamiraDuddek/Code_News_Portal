@@ -3,11 +3,22 @@
 a {
   text-decoration: none;
   color: #E1936A;
+ 
 }
 
 a:visited {
   color: #E1936A;
 }
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+   
+  }
+
+a.weiss:visited {
+	color: #ffffff;
+  }
 
 a:hover {
   color: inherit;
@@ -21,11 +32,12 @@ a:hover {
 		text-align: left;
 		padding-left: 1em;
 		position: relative;
-    display: inline-block;
+	display: inline-block;
+	font-size: 18px;
 }
 
 .linkgross:hover {
-		color: #c94d27;
+		color: #E58654;
 }
 
 .linkgross::before {
@@ -49,7 +61,7 @@ a:hover {
 		border-top-color: transparent;
 		border-left-color: transparent;
 		position: absolute;
-		top: 25%;
+		top: 24%;
 		right: -18px;
 		margin-top: 1px;
 		transform: rotate(-45deg);
@@ -58,9 +70,64 @@ a:hover {
 
 .linkgross:hover::before {
 		right: -28px;
-		background: #c94d27;
+		background: #E58654;
 }
 
 .linkgross:hover::after {
 		right: -28px;
+}
+
+.linkklein {
+	height: 3em;
+	width: 10em;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.linkklein:hover {
+	color: #E58654;
+}
+
+.linkklein::before {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30px;
+	background: #ffffff;
+	position: absolute;
+	top: 33%;
+	right: 5px;
+	transition: .5s;
+}
+
+.linkklein::after {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 10px;
+	border: 2px solid;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	position: absolute;
+	top: 25%;
+	right: 5px;
+	margin-top: -1px;
+	transform: rotate(-45deg);
+	transition: .5s;
+}
+
+.linkklein:hover::before {
+	right: -4px;
+	background: #ffffff;
+}
+
+.linkklein:hover::after {
+	right: -4px;
+}
+
+.linkmitte{
+	position: relative;
+	top: 50%;
 }
