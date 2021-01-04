@@ -10,7 +10,7 @@ a:visited {
   color: #E1936A;
 }
 
-a {
+a.weiss {
 	text-decoration: none;
 	color: #ffffff;
    
@@ -77,6 +77,8 @@ a:hover {
 		right: -28px;
 }
 
+//Link Klein 
+
 .linkklein {
 	height: 3em;
 	width: 10em;
@@ -95,7 +97,7 @@ a:hover {
 	display: block;
 	height: 2px;
 	width: 30px;
-	background: #ffffff;
+	background: #E58654;
 	position: absolute;
 	top: 33%;
 	right: 5px;
@@ -120,7 +122,7 @@ a:hover {
 
 .linkklein:hover::before {
 	right: -4px;
-	background: #ffffff;
+	background: #E58654;
 }
 
 .linkklein:hover::after {
