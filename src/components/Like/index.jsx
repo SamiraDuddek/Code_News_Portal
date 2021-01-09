@@ -7,7 +7,14 @@ const Like = ({ start }) => {
   return (
     <div className="like">
       <button className="like__btn" onClick={() => setCount(count + 1)}>
-        {count} – Click me
+        <div className="like__count">
+        {count} 
+        </div>
+        <div className="herz">
+        {count === 0 && <img src="./assets/images/heart.svg" alt="Herz" />} 
+        {count > 0 && <img src="./assets/images/heart_full.svg" alt="Herz" />} 
+        </div>
+
       </button>
     </div>
   );

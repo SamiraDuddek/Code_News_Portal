@@ -1,8 +1,5 @@
 .like__btn {
-  color: inherit;
-  border: 0;
-  box-shadow: none;
-  background-color: #dddddd;
+  
   text-shadow: none;
   margin: 0;
   padding: 0;
@@ -10,8 +7,20 @@
   line-height: inherit;
   font-size: inherit;
   font-family: inherit;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  display: flex;
 
   &:focus {
     outline: 0 !important;
   }
+
+  
+}
+
+.like__count{
+  width: 4rem;
 }

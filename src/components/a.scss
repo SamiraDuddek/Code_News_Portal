@@ -104,6 +104,11 @@ a:hover {
 	transition: .5s;
 }
 
+.linkklein.weiss::before {
+	background: #ffffff;
+	
+}
+
 .linkklein::after {
 	content: "";
 	display: block;
@@ -123,6 +128,10 @@ a:hover {
 .linkklein:hover::before {
 	right: -4px;
 	background: #E58654;
+}
+
+.linkklein.weiss:hover::before {
+	background: #ffffff;
 }
 
 .linkklein:hover::after {
