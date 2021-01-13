@@ -40,9 +40,17 @@ h1 {
 }
 
 h1.logo {
-  font-size: 50px;
+  font-size: 1.3rem;
   color: #ffffff;
   letter-spacing: 0.71px;
+
+  @include media(m) {
+    font-size: 1.5rem * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 2.1rem * $font-scale--l;
+  }
 }
 
 h2 {
@@ -63,11 +71,19 @@ h2 {
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 0.8rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.3px;
   line-height: 25px;
+
+  @include media(m) {
+    font-size: 0.8rem * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 0.8rem * $font-scale--l;
+  }
 }
 
 h3.black {
