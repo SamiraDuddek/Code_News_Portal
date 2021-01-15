@@ -48,3 +48,11 @@ const startReact = (selector, component, propsConvert) => {
     );
   });
 };
+
+// nav burger
+const navBurgerMobile = document.querySelector(".nav-burger-mobile");
+const navMobile = document.querySelector(".nav-mobile");
+navBurgerMobile.addEventListener("click", (e) => {
+  navBurgerMobile.classList.toggle("nav-is-active");
+  navMobile.classList.toggle("nav-is-active");
+});
