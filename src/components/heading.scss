@@ -42,10 +42,10 @@ h1 {
 h1.logo {
   font-size: 1.3rem;
   color: #ffffff;
-  letter-spacing: 0.71px;
+  letter-spacing: 1.1px;
 
   @include media(m) {
-    font-size: 1.5rem * $font-scale--m;
+    font-size: 1.8rem * $font-scale--m;
   }
 
   @include media(l) {
@@ -62,7 +62,8 @@ h2 {
   margin-bottom: 20px;
 
   @include media(m) {
-    font-size: 1rem * $font-scale--m;
+    font-size: 0.9rem * $font-scale--m;
+    line-height: 25px;
   }
 
   @include media(l) {
@@ -106,7 +107,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
+  color:#ffffff;
   letter-spacing: 0.23px;
 }
 
@@ -120,3 +121,16 @@ p.anzeige {
   font-size: 12px;
   padding-left: 1em;
 }
+
+
+p.text-mobile{
+
+  display: none;
+
+  @include media(l) {
+    display: block;
+  }
+  
+}
+
+

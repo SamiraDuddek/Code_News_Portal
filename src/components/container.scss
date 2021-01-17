@@ -3,11 +3,30 @@
   width: 96%;
   max-width: 60rem;
   margin: 0 auto; // center
+  margin-top: 40px; 
+
+  @include media(l) {
+    margin-top: 0;
+ }
+  
+ @include media(m) {
+  margin-top: 60px;
+}
+ 
 }
 
 .content-container {
   overflow: auto;
-  height: calc(100vh - 224px);
+  height: calc(100vh);
+
+
+  @include media(l) {
+     height: calc(100vh);
+  }
+
+  @include media(m) {
+    height: calc(100vh);
+ }
 }
 
 .footer {

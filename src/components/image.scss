@@ -35,6 +35,7 @@ img {
     height: 273px;
     object-fit: cover;
   }
+
 }
 
 .gradient {
@@ -56,11 +57,26 @@ img {
   margin-top: 2rem;
   margin-right: 0.2rem;
   position: relative;
-	top: 17%;
+  top: 17%;
+  
+  @include media(m) {
+    top: 10%;
+  }
 }
 
 .werbung {
   background-color: #bd5f3b;
+}
+
+.werbung-mobile{
+  display: none;
+
+  @include media(l) {
+    display: block;
+  }
+  @include media(m) {
+    display: block;
+  }
 }
 
 .herz{
@@ -72,8 +88,36 @@ img {
   }
 }
 
+.kommentar{
+  display: flex;
+  margin: 20px 0 0 20px;
+  p{
+  font-size: inherit;
+  font-family: inherit;
+  }
+  img {
+    width: 26px;
+    height: 23px;
+    margin-top: 0.2rem;
+    margin-right: 1em;
+  }
+}
+
+.kolumne{
+  display: flex;
+}
+
 .abstand{
   margin-bottom: 2rem;
+  display: none;
+
+  @include media(l) {
+    display: block;
+  }
+
+  @include media(m) {
+    display: none;
+  }
 }
 
 .socialmedia{

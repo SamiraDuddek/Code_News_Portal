@@ -29,6 +29,7 @@
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   justify-content: center;
+
   .nav-links-active {
     color: #e1936a;
     font-weight: 700;
@@ -37,7 +38,7 @@
 
 .nav-links li {
   list-style: none;
-  margin-right: 56px;
+  margin-right: 54px;
   text-align: center;
 }
 
@@ -55,13 +56,32 @@
   display: none;
 }
 
+.nav-mobile-header{
+  position: fixed;
+  top: 0;
+  background-color: #191919;
+  z-index: 9999;
+  width: 96%;
+
+
+  @include media(l) {
+    display: none;
+  }
+  display: block;
+
+  .logo {
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+}
+
 .nav-burger-mobile {
   position: fixed;
   top: 2em;
-  right: 2em;
+  right: 1em;
   z-index: 11;
   cursor: pointer;
-
 
 
   > div {
@@ -105,7 +125,7 @@
   color: white;
   transition: opacity 0.4s ease;
 
-  top: 0;
+  top: 10;
   left: 0;
   right: 0;
   bottom: 0;
@@ -117,12 +137,6 @@
   pointer-events: none;
   &.nav-is-active {
     opacity: 1;
-  }
-
-  .logo {
-    border-bottom: 1px solid;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
   }
 
   ul {
