@@ -166,12 +166,24 @@ a:hover {
 	  }
 
 }
-
+ 
+.kreis-mobile{
+	display: block;
+  
+	@include media(l) {
+	  display: none;
+	}
+	@include media(m) {
+	  display: none;
+	}
+}
 
 .kreisgruppe{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+	
 }
 .kreis{
 	width: 12px;
@@ -181,7 +193,6 @@ a:hover {
 	margin-right: 0.5em;
 	margin-top: 1em;
 	float: left;
-  
 	display: block;
   
 	@include media(l) {

@@ -53,6 +53,10 @@ h1.logo {
   }
 }
 
+h1.footer{
+  margin-top: 0;
+}
+
 h2 {
   font-size: 1rem * $font-scale--default;
   font-weight: 700;
@@ -120,6 +124,11 @@ p.datum {
 p.anzeige {
   font-size: 12px;
   padding-left: 1em;
+}
+
+p.f-text{
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 

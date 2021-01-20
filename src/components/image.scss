@@ -9,10 +9,21 @@ img {
 
 .imghover {
   position: relative;
+
+  
 }
 
 .imghover:hover .overlay {
   opacity: 1;
+
+  display: none;
+
+  @include media(l) {
+    display: block;
+  }
+  @include media(m) {
+    display: block;
+  }
 }
 
 .overlay {
@@ -94,11 +105,12 @@ img {
   p{
   font-size: inherit;
   font-family: inherit;
+  margin-top: 0.2rem;
   }
   img {
     width: 26px;
     height: 23px;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-right: 1em;
   }
 }
@@ -122,7 +134,15 @@ img {
 
 .socialmedia{
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 
+  img{
+  margin-right: 1em;
+  }
+
+}
+
+.topstorybild{
+  width: 100%;
 }
