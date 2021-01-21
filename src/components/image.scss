@@ -37,6 +37,7 @@ img {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #ffffff;
+
 }
 
 
@@ -68,10 +69,14 @@ img {
   margin-top: 2rem;
   margin-right: 0.2rem;
   position: relative;
-  top: 17%;
+  top: 30%;
   
   @include media(m) {
     top: 10%;
+  }
+
+  @include media(m) {
+    top: 17%;
   }
 }
 
@@ -143,6 +148,7 @@ img {
 
 }
 
-.topstorybild{
-  width: 100%;
+
+.topstorybild:nth-child(even) .grid-12 {
+  flex-direction: row-reverse;
 }
