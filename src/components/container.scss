@@ -5,13 +5,15 @@
   margin: 0 auto; // center
   margin-top: 40px; 
 
+  @include media(m) {
+  margin-top: 60px;
+}
+
   @include media(l) {
     margin-top: 0;
  }
   
- @include media(m) {
-  margin-top: 60px;
-}
+ 
  
 }
 
@@ -22,7 +24,7 @@
 @include media(m) {
     height: calc(100vh);
  }
- 
+
   @include media(l) {
      height: calc(100vh - 250px);
   }

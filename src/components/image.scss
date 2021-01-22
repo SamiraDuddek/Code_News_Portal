@@ -47,7 +47,7 @@ img {
   align-items: center;
   
   @include media(m) {
-   max-height:none;
+   max-height: none;
   }
 }
 
