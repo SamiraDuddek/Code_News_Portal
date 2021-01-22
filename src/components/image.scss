@@ -40,6 +40,17 @@ img {
 
 }
 
+.imgmobile{
+  max-height: 9rem;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  
+  @include media(m) {
+   max-height:none;
+  }
+}
+
 
 .gradientbox {
   position: relative;
@@ -148,7 +159,3 @@ img {
 
 }
 
-
-.topstorybild:nth-child(even) .grid-12 {
-  flex-direction: row-reverse;
-}

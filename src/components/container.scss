@@ -19,12 +19,13 @@
   overflow: auto;
   height: calc(100vh);
 
-
-  @include media(l) {
-     height: calc(100vh);
-  }
-
-  @include media(m) {
+@include media(m) {
     height: calc(100vh);
  }
+ 
+  @include media(l) {
+     height: calc(100vh - 250px);
+  }
+
+  
 }
